@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		223D31DA1B98E58800968F56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D31D91B98E58800968F56 /* AppDelegate.swift */; };
 		223D31DD1B98E58800968F56 /* Tinderoni.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 223D31DB1B98E58800968F56 /* Tinderoni.xcdatamodeld */; };
-		223D31DF1B98E58800968F56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D31DE1B98E58800968F56 /* ViewController.swift */; };
 		223D31E21B98E58800968F56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223D31E01B98E58800968F56 /* Main.storyboard */; };
 		223D31E41B98E58800968F56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 223D31E31B98E58800968F56 /* Images.xcassets */; };
 		223D31E71B98E58800968F56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 223D31E51B98E58800968F56 /* LaunchScreen.xib */; };
@@ -31,7 +30,6 @@
 		223D31D81B98E58800968F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		223D31D91B98E58800968F56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		223D31DC1B98E58800968F56 /* Tinderoni.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tinderoni.xcdatamodel; sourceTree = "<group>"; };
-		223D31DE1B98E58800968F56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		223D31E11B98E58800968F56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		223D31E31B98E58800968F56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		223D31E61B98E58800968F56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -79,8 +77,11 @@
 		223D31D61B98E58800968F56 /* Tinderoni */ = {
 			isa = PBXGroup;
 			children = (
+				223D31FF1B98E7F800968F56 /* Service */,
+				223D31FE1B98E7F100968F56 /* Controller */,
+				223D31FD1B98E7EB00968F56 /* View */,
+				223D31FC1B98E7E300968F56 /* Model */,
 				223D31D91B98E58800968F56 /* AppDelegate.swift */,
-				223D31DE1B98E58800968F56 /* ViewController.swift */,
 				223D31E01B98E58800968F56 /* Main.storyboard */,
 				223D31E31B98E58800968F56 /* Images.xcassets */,
 				223D31E51B98E58800968F56 /* LaunchScreen.xib */,
@@ -113,6 +114,34 @@
 				223D31F11B98E58900968F56 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		223D31FC1B98E7E300968F56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		223D31FD1B98E7EB00968F56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		223D31FE1B98E7F100968F56 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		223D31FF1B98E7F800968F56 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +244,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				223D31DF1B98E58800968F56 /* ViewController.swift in Sources */,
 				223D31DD1B98E58800968F56 /* Tinderoni.xcdatamodeld in Sources */,
 				223D31DA1B98E58800968F56 /* AppDelegate.swift in Sources */,
 			);
