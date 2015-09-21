@@ -14,6 +14,6 @@
 #import <ParseUI/ParseUI.h>
 #import <Bolts/Bolts.h>
 #import <MDCSwipeToChoose/MDCSwipeToChoose.h>
-
+#import <pop/POP.h>
 
 #endif
