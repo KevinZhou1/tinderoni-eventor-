@@ -16,8 +16,6 @@ class PostEventCategoryCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        let theWidth = UIScreen.mainScreen().bounds.width
-        
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

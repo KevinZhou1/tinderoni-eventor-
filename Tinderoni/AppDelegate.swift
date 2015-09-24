@@ -13,26 +13,29 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var controller: LoginSignupViewController!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        // [Optional] Power your app with Local Datastore. For more info, go to
-        // https://parse.com/docs/ios_guide#localdatastore/iOS
-        Parse.enableLocalDatastore()
-        
-        // Initialize Parse.
-        Parse.setApplicationId("4cyx9WnnWD8xlDLkm7d9SYkstKaqLFvdi11DYNBX",
-            clientKey: "ZPPlGGW44TQhCb2gd8YiPB3euC0ZcejO68MDqbFk")
-        
+        setupParse()
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
+        setupLayer()
+        
         UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Fade);
-        
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false);
-        
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+        
+        //controller = LoginSignupViewController()
+        //controller.layerClient = layerClient
+        
+        // Register for push
+        self.registerApplicationForPushNotifications(application)
+        
+        //self.window!.rootViewController = UINavigationController(rootViewController: controller)
         
         return true
     }
@@ -132,6 +135,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
+    }
+    
+    
+    
+    // Set up for Parse and Layer
+    func setupParse() {
+        // Enable Parse local data store for user persistence
+        Parse.enableLocalDatastore()
+        Parse.setApplicationId(ParseAppIDString, clientKey: ParseClientKeyString)
+        
+        // Set default ACLs
+        let defaultACL: PFACL = PFACL()
+        defaultACL.setPublicReadAccess(true)
+        PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser: true)
+    }
+    
+    func setupLayer() {
+        layerClient = LYRClient(appID: LayerAppIDString)
+        layerClient.autodownloadMIMETypes = NSSet(objects: ATLMIMETypeImagePNG, ATLMIMETypeImageJPEG, ATLMIMETypeImageJPEGPreview, ATLMIMETypeImageGIF, ATLMIMETypeImageGIFPreview, ATLMIMETypeLocation) as! Set<NSObject>
+    }
+    
+    // Push notification for Layer
+    func registerApplicationForPushNotifications(application: UIApplication) {
+        // Set up push notifications
+        // For more information about Push, check out:
+        // https://developer.layer.com/docs/guides/ios#push-notification
+        
+        // Register device for iOS8
+        let notificationSettings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound], categories: nil)
+        application.registerUserNotificationSettings(notificationSettings)
+        application.registerForRemoteNotifications()
     }
 
 }

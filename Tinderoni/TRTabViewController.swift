@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class TRTabViewController: UITabBarController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+}

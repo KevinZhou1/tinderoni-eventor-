@@ -15,8 +15,10 @@
 		223D31E41B98E58800968F56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 223D31E31B98E58800968F56 /* Images.xcassets */; };
 		223D31E71B98E58800968F56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 223D31E51B98E58800968F56 /* LaunchScreen.xib */; };
 		223D31F31B98E58900968F56 /* TinderoniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D31F21B98E58900968F56 /* TinderoniTests.swift */; };
+		224BC91E1BB42B8C00877D9C /* LoginSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BC91D1BB42B8C00877D9C /* LoginSignupViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		225A7BAD1B9B616A00108BCC /* TRTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A7BAC1B9B616A00108BCC /* TRTabViewController.swift */; };
 		225A7BB01B9F7F3000108BCC /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A7BAF1B9F7F3000108BCC /* DiscoverViewController.swift */; };
+		225F5BDE1BB34BC1009B30B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F5BDD1BB34BC1009B30B0 /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
 		226BB79F1BADDD5400490026 /* CreateMyOwnEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226BB79E1BADDD5400490026 /* CreateMyOwnEventViewController.swift */; };
 		22B986261BAE103900E3C96C /* LocalEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B986251BAE103900E3C96C /* LocalEventViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		22B986281BAE10B100E3C96C /* LocalEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B986271BAE10B100E3C96C /* LocalEventCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -48,9 +50,11 @@
 		223D31EC1B98E58900968F56 /* TinderoniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinderoniTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		223D31F11B98E58900968F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		223D31F21B98E58900968F56 /* TinderoniTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderoniTests.swift; sourceTree = "<group>"; };
+		224BC91D1BB42B8C00877D9C /* LoginSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignupViewController.swift; sourceTree = "<group>"; };
 		225A7BAC1B9B616A00108BCC /* TRTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRTabViewController.swift; sourceTree = "<group>"; };
 		225A7BAF1B9F7F3000108BCC /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		225A7BB11B9F814E00108BCC /* Tinderoni-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tinderoni-Bridging-Header.h"; sourceTree = "<group>"; };
+		225F5BDD1BB34BC1009B30B0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		226BB79E1BADDD5400490026 /* CreateMyOwnEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMyOwnEventViewController.swift; sourceTree = "<group>"; };
 		22B986251BAE103900E3C96C /* LocalEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalEventViewController.swift; sourceTree = "<group>"; };
 		22B986271BAE10B100E3C96C /* LocalEventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalEventCell.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 				223D31E51B98E58800968F56 /* LaunchScreen.xib */,
 				223D31DB1B98E58800968F56 /* Tinderoni.xcdatamodeld */,
 				223D31D71B98E58800968F56 /* Supporting Files */,
+				225F5BDD1BB34BC1009B30B0 /* Constants.swift */,
 			);
 			path = Tinderoni;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				220DE9CF1BADC2E600199BB1 /* PostEventViewController.swift */,
 				226BB79E1BADDD5400490026 /* CreateMyOwnEventViewController.swift */,
 				22B986251BAE103900E3C96C /* LocalEventViewController.swift */,
+				224BC91D1BB42B8C00877D9C /* LoginSignupViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -344,8 +350,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				226BB79F1BADDD5400490026 /* CreateMyOwnEventViewController.swift in Sources */,
+				225F5BDE1BB34BC1009B30B0 /* Constants.swift in Sources */,
 				220DE9D31BADD24D00199BB1 /* PostEventCategoryCell.swift in Sources */,
 				223D31DD1B98E58800968F56 /* Tinderoni.xcdatamodeld in Sources */,
+				224BC91E1BB42B8C00877D9C /* LoginSignupViewController.swift in Sources */,
 				225A7BB01B9F7F3000108BCC /* DiscoverViewController.swift in Sources */,
 				22B986281BAE10B100E3C96C /* LocalEventCell.swift in Sources */,
 				220DE9D01BADC2E600199BB1 /* PostEventViewController.swift in Sources */,

@@ -9,11 +9,16 @@
 #ifndef Tinderoni_Tinderoni_Bridging_Header_h
 #define Tinderoni_Tinderoni_Bridging_Header_h
 
-#import <UIKit/UIKit.h>
+#import <Atlas/Atlas.h>
+#import <LayerKit/LayerKit.h>
+#import <Bolts/Bolts.h>
 #import <Parse/Parse.h>
 #import <ParseUI/ParseUI.h>
-#import <Bolts/Bolts.h>
+
 #import <MDCSwipeToChoose/MDCSwipeToChoose.h>
+
+#import <SVProgressHUD/SVProgressHUD.h>
+
 #import <pop/POP.h>
 
 #endif
