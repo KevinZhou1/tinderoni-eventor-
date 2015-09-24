@@ -21,4 +21,6 @@
 
 #import <pop/POP.h>
 
+#import "SWRevealViewController.h"
+
 #endif

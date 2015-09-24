@@ -24,9 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setupLayer()
         
+        /*
         UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Fade);
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false);
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        */
         
         
         //controller = LoginSignupViewController()
