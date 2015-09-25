@@ -27,17 +27,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /*
         UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Fade);
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false);
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         */
         
-        
-        //controller = LoginSignupViewController()
-        //controller.layerClient = layerClient
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         
         // Register for push
         self.registerApplicationForPushNotifications(application)
-        
-        //self.window!.rootViewController = UINavigationController(rootViewController: controller)
         
         return true
     }
@@ -138,8 +134,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-    
-    
     
     // Set up for Parse and Layer
     func setupParse() {

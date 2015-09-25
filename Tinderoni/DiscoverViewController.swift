@@ -11,19 +11,9 @@ import UIKit
 // ... in a view controller
 
 class DiscoverViewController: UIViewController, MDCSwipeToChooseDelegate {
-    @IBOutlet weak var menuButton: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            
-            // Uncomment to change the width of menu
-            self.revealViewController().rearViewRevealWidth = 270
-        }
         
         let options = MDCSwipeToChooseViewOptions()
         options.delegate = self
