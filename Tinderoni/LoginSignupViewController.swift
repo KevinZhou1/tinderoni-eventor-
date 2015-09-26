@@ -159,7 +159,7 @@ class LoginSignupViewController: UIViewController, PFLogInViewControllerDelegate
                         print("Failed Authenticating Layer Client with error:\(error)")
                     } else {
                         print("Authenticated")
-                        self.presentTabBarViewController()
+                        self.presentMainBoard()
                     }
                 })
             }
@@ -239,10 +239,10 @@ class LoginSignupViewController: UIViewController, PFLogInViewControllerDelegate
     
     // MARK - Present ATLPConversationListController
     
-    func presentTabBarViewController() {
+    func presentMainBoard() {
         SVProgressHUD.dismiss()
         
-        self.performSegueWithIdentifier("showTabBarController", sender: nil)
+        self.performSegueWithIdentifier("showMainBoard", sender: nil)
     }
     
     // MARK - Helper function
