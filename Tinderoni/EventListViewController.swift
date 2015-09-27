@@ -38,7 +38,7 @@ class EventListViewController: UIViewController, UITableViewDataSource, UITableV
     
     // Configure table view
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

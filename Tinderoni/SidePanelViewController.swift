@@ -10,16 +10,12 @@
 import Foundation
 
 class SidePanelViewController: UIViewController {
-    
-    @IBOutlet weak var messageButton: UIButton!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
 
-    @IBAction func goMessage(sender: AnyObject) {
-        self.performSegueWithIdentifier("showMessages", sender: nil)
-    }
     
     @IBAction func logOut(sender: AnyObject) {
         globalLayerClient.deauthenticateWithCompletion { (success: Bool, error: NSError?) in
