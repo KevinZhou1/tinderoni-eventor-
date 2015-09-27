@@ -1,3 +1,4 @@
+
 //
 //  SidePanelViewController.swift
 //  Tinderoni
@@ -18,6 +19,17 @@ class SidePanelViewController: UIViewController {
 
     @IBAction func goMessage(sender: AnyObject) {
         self.performSegueWithIdentifier("showMessages", sender: nil)
+    }
+    
+    @IBAction func logOut(sender: AnyObject) {
+        globalLayerClient.deauthenticateWithCompletion { (success: Bool, error: NSError?) in
+            if error == nil {
+                PFUser.logOut()
+                self.navigationController!.popToRootViewControllerAnimated(true)
+            } else {
+                print("Failed to deauthenticate: \(error)")
+            }
+        }
     }
 
 }

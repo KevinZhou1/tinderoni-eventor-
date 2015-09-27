@@ -20,7 +20,9 @@ class ConversationViewController: ATLConversationViewController, ATLConversation
         self.addressBarController?.delegate = self
         
         // Uncomment the following line if you want to show avatars in 1:1 conversations
-        // self.shouldDisplayAvatarItemForOneOtherParticipant = true
+        self.shouldDisplayAvatarItemForOneOtherParticipant = true
+        
+        self.dateDisplayTimeInterval = 120
         
         // Setup the dateformatter used by the dataSource.
         self.dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
@@ -94,7 +96,7 @@ class ConversationViewController: ATLConversationViewController, ATLConversation
             let status: LYRRecipientStatus! = LYRRecipientStatus(rawValue: recipientStatusDict[participantAsString]!.unsignedIntegerValue)
             switch status! {
             case .Sent:
-                textColor = UIColor.lightGrayColor()
+                textColor = UIColor.redColor()
             case .Delivered:
                 textColor = UIColor.orangeColor()
             case .Read:

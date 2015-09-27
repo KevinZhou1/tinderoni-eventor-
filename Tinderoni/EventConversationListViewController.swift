@@ -23,6 +23,7 @@ class EventConversationListViewController: ATLConversationListViewController, AT
         
         self.dataSource = self
         self.delegate = self
+        self.layerClient = globalLayerClient
         
         let composeItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Compose, target: self, action: Selector("composeButtonTapped:"))
         self.navigationItem.setRightBarButtonItem(composeItem, animated: false)

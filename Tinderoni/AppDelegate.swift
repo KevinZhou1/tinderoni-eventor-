@@ -148,8 +148,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupLayer() {
-        layerClient = LYRClient(appID: LayerAppIDString)
-        layerClient.autodownloadMIMETypes = NSSet(objects: ATLMIMETypeImagePNG, ATLMIMETypeImageJPEG, ATLMIMETypeImageJPEGPreview, ATLMIMETypeImageGIF, ATLMIMETypeImageGIFPreview, ATLMIMETypeLocation) as! Set<NSObject>
+        globalLayerClient = LYRClient(appID: LayerAppIDString)
+        globalLayerClient.autodownloadMIMETypes = NSSet(objects: ATLMIMETypeImagePNG, ATLMIMETypeImageJPEG, ATLMIMETypeImageJPEGPreview, ATLMIMETypeImageGIF, ATLMIMETypeImageGIFPreview, ATLMIMETypeLocation) as! Set<NSObject>
     }
     
     // Push notification for Layer

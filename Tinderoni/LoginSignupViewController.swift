@@ -128,7 +128,7 @@ class LoginSignupViewController: UIViewController, PFLogInViewControllerDelegate
     
     func logOutButtonTapAction(sender: AnyObject) {
         PFUser.logOut()
-        layerClient.deauthenticateWithCompletion { success, error in
+        globalLayerClient.deauthenticateWithCompletion { success, error in
             if (!success) {
                 print("Failed to deauthenticate: \(error)")
             } else {
@@ -147,7 +147,7 @@ class LoginSignupViewController: UIViewController, PFLogInViewControllerDelegate
         // Connect to Layer
         // See "Quick Start - Connect" for more details
         // https://developer.layer.com/docs/quick-start/ios#connect
-        layerClient.connectWithCompletion { success, error in
+        globalLayerClient.connectWithCompletion { success, error in
             if (!success) {
                 print("Failed to connect to Layer: \(error)")
             } else {
@@ -168,17 +168,17 @@ class LoginSignupViewController: UIViewController, PFLogInViewControllerDelegate
     
     func authenticateLayerWithUserID(userID: NSString, completion: ((success: Bool , error: NSError!) -> Void)!) {
         // Check to see if the layerClient is already authenticated.
-        if layerClient.authenticatedUserID != nil {
+        if globalLayerClient.authenticatedUserID != nil {
             // If the layerClient is authenticated with the requested userID, complete the authentication process.
-            if layerClient.authenticatedUserID == userID {
-                print("Layer Authenticated as User \(layerClient.authenticatedUserID)")
+            if globalLayerClient.authenticatedUserID == userID {
+                print("Layer Authenticated as User \(globalLayerClient.authenticatedUserID)")
                 if completion != nil {
                     completion(success: true, error: nil)
                 }
                 return
             } else {
                 //If the authenticated userID is different, then deauthenticate the current client and re-authenticate with the new userID.
-                layerClient.deauthenticateWithCompletion { (success: Bool, error: NSError!) in
+                globalLayerClient.deauthenticateWithCompletion { (success: Bool, error: NSError!) in
                     if error != nil {
                         self.authenticationTokenWithUserId(userID, completion: { (success: Bool, error: NSError?) in
                             if (completion != nil) {
@@ -206,7 +206,7 @@ class LoginSignupViewController: UIViewController, PFLogInViewControllerDelegate
         /*
         * 1. Request an authentication Nonce from Layer
         */
-        layerClient.requestAuthenticationNonceWithCompletion { (nonce: String!, error: NSError!) in
+        globalLayerClient.requestAuthenticationNonceWithCompletion { (nonce: String!, error: NSError!) in
             if (nonce.isEmpty) {
                 if (completion != nil) {
                     completion(success: false, error: error)
@@ -220,7 +220,7 @@ class LoginSignupViewController: UIViewController, PFLogInViewControllerDelegate
             PFCloud.callFunctionInBackground("generateToken", withParameters: ["nonce": nonce, "userID": userID]) { (object:AnyObject?, error: NSError?) -> Void in
                 if error == nil {
                     let identityToken = object as! String
-                    layerClient.authenticateWithIdentityToken(identityToken) { authenticatedUserID, error in
+                    globalLayerClient.authenticateWithIdentityToken(identityToken) { authenticatedUserID, error in
                         if (!authenticatedUserID.isEmpty) {
                             if (completion != nil) {
                                 completion(success: true, error: nil)
