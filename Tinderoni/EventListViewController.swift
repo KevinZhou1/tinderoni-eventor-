@@ -32,6 +32,8 @@ class EventListViewController: UIViewController, UITableViewDataSource, UITableV
         
         table.delegate = self
         table.dataSource = self
+        
+        
     }
     
     // Configure table view
@@ -41,10 +43,24 @@ class EventListViewController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("eventCardCell", forIndexPath: indexPath)
+        cell.selectionStyle = .None
         
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("showEventDetail", sender: self)
+    }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.Delete) {
+            //add code here for when you hit delete
+        }
+    }
     
     
 }

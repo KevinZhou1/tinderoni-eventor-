@@ -20,6 +20,11 @@
 		225A7BB01B9F7F3000108BCC /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A7BAF1B9F7F3000108BCC /* DiscoverViewController.swift */; };
 		225F5BDE1BB34BC1009B30B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F5BDD1BB34BC1009B30B0 /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
 		22933B6C1BB58E9D007E7DFB /* TRNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22933B6B1BB58E9D007E7DFB /* TRNavigationViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		229B2CBA1BB5F9F900554CD5 /* EventSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B2CB91BB5F9F900554CD5 /* EventSelectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		229B2CBF1BB7089F00554CD5 /* EventConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B2CBE1BB7089F00554CD5 /* EventConversationListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		229B2CC11BB708B500554CD5 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B2CC01BB708B500554CD5 /* ConversationViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		229B2CC31BB70C5800554CD5 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B2CC21BB70C5800554CD5 /* UserManager.swift */; settings = {ASSET_TAGS = (); }; };
+		229B2CC51BB7174A00554CD5 /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B2CC41BB7174A00554CD5 /* SidePanelViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		22B986281BAE10B100E3C96C /* LocalEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B986271BAE10B100E3C96C /* LocalEventCell.swift */; settings = {ASSET_TAGS = (); }; };
 		22B9862A1BAE35A400E3C96C /* DiscoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B986291BAE35A400E3C96C /* DiscoverView.xib */; settings = {ASSET_TAGS = (); }; };
 		22B9862C1BAE379800E3C96C /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9862B1BAE379800E3C96C /* DiscoverView.swift */; settings = {ASSET_TAGS = (); }; };
@@ -66,6 +71,11 @@
 		225A7BB11B9F814E00108BCC /* Tinderoni-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tinderoni-Bridging-Header.h"; sourceTree = "<group>"; };
 		225F5BDD1BB34BC1009B30B0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		22933B6B1BB58E9D007E7DFB /* TRNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRNavigationViewController.swift; sourceTree = "<group>"; };
+		229B2CB91BB5F9F900554CD5 /* EventSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSelectionViewController.swift; sourceTree = "<group>"; };
+		229B2CBE1BB7089F00554CD5 /* EventConversationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventConversationListViewController.swift; sourceTree = "<group>"; };
+		229B2CC01BB708B500554CD5 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		229B2CC21BB70C5800554CD5 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		229B2CC41BB7174A00554CD5 /* SidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
 		22B986271BAE10B100E3C96C /* LocalEventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalEventCell.swift; sourceTree = "<group>"; };
 		22B986291BAE35A400E3C96C /* DiscoverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverView.xib; sourceTree = "<group>"; };
 		22B9862B1BAE379800E3C96C /* DiscoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
@@ -206,6 +216,9 @@
 		223D31FE1B98E7F100968F56 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				229B2CBD1BB7084A00554CD5 /* Message */,
+				229B2CBC1BB7078600554CD5 /* LoginandSignup */,
+				229B2CBB1BB7077800554CD5 /* Discover */,
 				22F9680B1BB59BEE0035D7D9 /* Event */,
 				22933B6D1BB58EAD007E7DFB /* Navigation */,
 				225A7BAF1B9F7F3000108BCC /* DiscoverViewController.swift */,
@@ -218,6 +231,7 @@
 		223D31FF1B98E7F800968F56 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				229B2CC21BB70C5800554CD5 /* UserManager.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -243,14 +257,41 @@
 			isa = PBXGroup;
 			children = (
 				22933B6B1BB58E9D007E7DFB /* TRNavigationViewController.swift */,
+				229B2CC41BB7174A00554CD5 /* SidePanelViewController.swift */,
 			);
 			name = Navigation;
+			sourceTree = "<group>";
+		};
+		229B2CBB1BB7077800554CD5 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				225A7BAF1B9F7F3000108BCC /* DiscoverViewController.swift */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		229B2CBC1BB7078600554CD5 /* LoginandSignup */ = {
+			isa = PBXGroup;
+			children = (
+				224BC91D1BB42B8C00877D9C /* LoginSignupViewController.swift */,
+			);
+			name = LoginandSignup;
+			sourceTree = "<group>";
+		};
+		229B2CBD1BB7084A00554CD5 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				229B2CBE1BB7089F00554CD5 /* EventConversationListViewController.swift */,
+				229B2CC01BB708B500554CD5 /* ConversationViewController.swift */,
+			);
+			name = Message;
 			sourceTree = "<group>";
 		};
 		22F9680B1BB59BEE0035D7D9 /* Event */ = {
 			isa = PBXGroup;
 			children = (
 				22F9680C1BB59DE20035D7D9 /* EventListViewController.swift */,
+				229B2CB91BB5F9F900554CD5 /* EventSelectionViewController.swift */,
 			);
 			name = Event;
 			sourceTree = "<group>";
@@ -410,11 +451,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229B2CC31BB70C5800554CD5 /* UserManager.swift in Sources */,
 				22F9680F1BB5A9560035D7D9 /* eventCell.swift in Sources */,
 				224BC9221BB49A6100877D9C /* SWRevealViewController.m in Sources */,
 				22F9680A1BB595CA0035D7D9 /* CommonFunctions.swift in Sources */,
 				225F5BDE1BB34BC1009B30B0 /* Constants.swift in Sources */,
 				220DE9D31BADD24D00199BB1 /* PostEventCategoryCell.swift in Sources */,
+				229B2CC51BB7174A00554CD5 /* SidePanelViewController.swift in Sources */,
 				223D31DD1B98E58800968F56 /* Tinderoni.xcdatamodeld in Sources */,
 				224BC91E1BB42B8C00877D9C /* LoginSignupViewController.swift in Sources */,
 				9DDC61C81BB5E3ED005C8864 /* SexViewController.swift in Sources */,
@@ -427,6 +470,8 @@
 				224BC9251BB5829E00877D9C /* PFUser+ATLParticipant.swift in Sources */,
 				9DDC61C21BB5D569005C8864 /* PreferencesViewController.swift in Sources */,
 				22933B6C1BB58E9D007E7DFB /* TRNavigationViewController.swift in Sources */,
+				229B2CBA1BB5F9F900554CD5 /* EventSelectionViewController.swift in Sources */,
+				229B2CBF1BB7089F00554CD5 /* EventConversationListViewController.swift in Sources */,
 				22B9862C1BAE379800E3C96C /* DiscoverView.swift in Sources */,
 				22F9680D1BB59DE20035D7D9 /* EventListViewController.swift in Sources */,
 				223D31DA1B98E58800968F56 /* AppDelegate.swift in Sources */,

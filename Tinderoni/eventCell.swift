@@ -10,21 +10,28 @@ import UIKit
 
 class EventCell: UITableViewCell {
 
+    @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var eventPosterImageView: UIImageView!
     @IBOutlet weak var eventName: UILabel!
     @IBOutlet weak var eventTime: UILabel!
-    @IBOutlet weak var eventCategary: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        eventPosterImageView.layer.cornerRadius = eventPosterImageView.bounds.width/2
+        eventPosterImageView.clipsToBounds = true
+    }
     
     override func layoutSubviews() {
-        let radius = CGFloat(2.0)
-        layer.cornerRadius = radius
-        let shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: radius)
+        let radius = CGFloat(1.0)
+        cardView.layer.cornerRadius = radius
+        let shadowPath = UIBezierPath(roundedRect: cardView.bounds, cornerRadius: radius)
         
-        layer.masksToBounds = false
-        layer.shadowColor = UIColor.blackColor().CGColor
-        layer.shadowOffset = CGSize(width: 0, height: 3);
-        layer.shadowOpacity = 0.5
-        layer.shadowPath = shadowPath.CGPath
+        cardView.layer.masksToBounds = false
+        cardView.layer.shadowColor = UIColor.blackColor().CGColor
+        cardView.layer.shadowOffset = CGSize(width: -0.2, height: -0.2);
+        cardView.layer.shadowOpacity = 0.2
+        cardView.layer.shadowPath = shadowPath.CGPath
     }
     
 
