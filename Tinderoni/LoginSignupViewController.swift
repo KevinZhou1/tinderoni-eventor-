@@ -24,6 +24,11 @@ class LoginSignupViewController: UIViewController, PFLogInViewControllerDelegate
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        
+        //Added for demo
+        self.view.backgroundColor = UIColor.redColor()
+        
+        
         if (PFUser.currentUser() != nil) {
             self.loginLayer()
             return

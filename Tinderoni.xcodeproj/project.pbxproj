@@ -27,6 +27,13 @@
 		22F9680D1BB59DE20035D7D9 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F9680C1BB59DE20035D7D9 /* EventListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		22F9680F1BB5A9560035D7D9 /* eventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F9680E1BB5A9560035D7D9 /* eventCell.swift */; settings = {ASSET_TAGS = (); }; };
 		8A1D05626A74853972B8E29D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBAB58ACF3B2467AFCFFA65 /* libPods.a */; };
+		9DDC61C01BB5D47C005C8864 /* JoinNowSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDC61BF1BB5D47C005C8864 /* JoinNowSignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDC61C21BB5D569005C8864 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDC61C11BB5D569005C8864 /* PreferencesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDC61C41BB5D57C005C8864 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDC61C31BB5D57C005C8864 /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDC61C61BB5E3D1005C8864 /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDC61C51BB5E3D1005C8864 /* GenderViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDC61C81BB5E3ED005C8864 /* SexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDC61C71BB5E3ED005C8864 /* SexViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDC61CA1BB5EC1E005C8864 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDC61C91BB5EC1E005C8864 /* InformationViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDC61CC1BB5F61B005C8864 /* AddImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDC61CB1BB5F61B005C8864 /* AddImagesViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +74,13 @@
 		22F9680E1BB5A9560035D7D9 /* eventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventCell.swift; sourceTree = "<group>"; };
 		269D14D03FE5261073028595 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8BBAB58ACF3B2467AFCFFA65 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DDC61BF1BB5D47C005C8864 /* JoinNowSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinNowSignInViewController.swift; sourceTree = "<group>"; };
+		9DDC61C11BB5D569005C8864 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		9DDC61C31BB5D57C005C8864 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		9DDC61C51BB5E3D1005C8864 /* GenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
+		9DDC61C71BB5E3ED005C8864 /* SexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexViewController.swift; sourceTree = "<group>"; };
+		9DDC61C91BB5EC1E005C8864 /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		9DDC61CB1BB5F61B005C8864 /* AddImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddImagesViewController.swift; sourceTree = "<group>"; };
 		C6B4C75C6390C70C494A384A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +146,12 @@
 				223D31FF1B98E7F800968F56 /* Service */,
 				223D31D91B98E58800968F56 /* AppDelegate.swift */,
 				223D31E01B98E58800968F56 /* Main.storyboard */,
+				9DDC61CB1BB5F61B005C8864 /* AddImagesViewController.swift */,
+				9DDC61C91BB5EC1E005C8864 /* InformationViewController.swift */,
+				9DDC61C51BB5E3D1005C8864 /* GenderViewController.swift */,
+				9DDC61C71BB5E3ED005C8864 /* SexViewController.swift */,
+				9DDC61C11BB5D569005C8864 /* PreferencesViewController.swift */,
+				9DDC61C31BB5D57C005C8864 /* SignInViewController.swift */,
 				223D31E31B98E58800968F56 /* Images.xcassets */,
 				223D31E51B98E58800968F56 /* LaunchScreen.xib */,
 				223D31DB1B98E58800968F56 /* Tinderoni.xcdatamodeld */,
@@ -189,6 +209,7 @@
 				22F9680B1BB59BEE0035D7D9 /* Event */,
 				22933B6D1BB58EAD007E7DFB /* Navigation */,
 				225A7BAF1B9F7F3000108BCC /* DiscoverViewController.swift */,
+				9DDC61BF1BB5D47C005C8864 /* JoinNowSignInViewController.swift */,
 				224BC91D1BB42B8C00877D9C /* LoginSignupViewController.swift */,
 			);
 			name = Controller;
@@ -396,13 +417,20 @@
 				220DE9D31BADD24D00199BB1 /* PostEventCategoryCell.swift in Sources */,
 				223D31DD1B98E58800968F56 /* Tinderoni.xcdatamodeld in Sources */,
 				224BC91E1BB42B8C00877D9C /* LoginSignupViewController.swift in Sources */,
+				9DDC61C81BB5E3ED005C8864 /* SexViewController.swift in Sources */,
+				9DDC61C41BB5D57C005C8864 /* SignInViewController.swift in Sources */,
 				225A7BB01B9F7F3000108BCC /* DiscoverViewController.swift in Sources */,
+				9DDC61C61BB5E3D1005C8864 /* GenderViewController.swift in Sources */,
+				9DDC61CC1BB5F61B005C8864 /* AddImagesViewController.swift in Sources */,
+				9DDC61C01BB5D47C005C8864 /* JoinNowSignInViewController.swift in Sources */,
 				22B986281BAE10B100E3C96C /* LocalEventCell.swift in Sources */,
 				224BC9251BB5829E00877D9C /* PFUser+ATLParticipant.swift in Sources */,
+				9DDC61C21BB5D569005C8864 /* PreferencesViewController.swift in Sources */,
 				22933B6C1BB58E9D007E7DFB /* TRNavigationViewController.swift in Sources */,
 				22B9862C1BAE379800E3C96C /* DiscoverView.swift in Sources */,
 				22F9680D1BB59DE20035D7D9 /* EventListViewController.swift in Sources */,
 				223D31DA1B98E58800968F56 /* AppDelegate.swift in Sources */,
+				9DDC61CA1BB5EC1E005C8864 /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
