@@ -1,0 +1,7 @@
+pod 'Parse'
+pod 'ParseUI'
+pod 'LayerKit'
+pod 'Atlas'
+pod 'pop'
+pod 'MDCSwipeToChoose'
+pod 'SVProgressHUD'

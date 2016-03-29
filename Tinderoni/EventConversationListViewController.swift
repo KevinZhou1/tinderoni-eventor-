@@ -122,7 +122,7 @@ class EventConversationListViewController: ATLConversationListViewController, AT
     // The following method handles presenting the correct `ConversationViewController`, regardeless of the current state of the navigation stack.
     func presentControllerWithConversation(conversation: LYRConversation) {
         let shouldShowAddressBar: Bool  = conversation.participants.count > 2 || conversation.participants.count == 0
-        let conversationViewController: ConversationViewController = ConversationViewController(layerClient: self.layerClient)
+      //  let conversationViewController: ConversationViewController = ConversationViewController(layerClient: self.layerClient)
         conversationViewController.displaysAddressBar = shouldShowAddressBar
         conversationViewController.conversation = conversation
         
@@ -140,7 +140,7 @@ class EventConversationListViewController: ATLConversationListViewController, AT
     // MARK - Actions
     
     func composeButtonTapped(sender: AnyObject) {
-        let controller = ConversationViewController(layerClient: layerClient)
+ //       let controller = ConversationViewController(layerClient: layerClient)
         controller.displaysAddressBar = true
         self.navigationController!.pushViewController(controller, animated: true)
     }
